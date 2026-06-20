@@ -106,37 +106,37 @@ const Index = () => {
 
       {/* HERO */}
       <section id="hero" className="relative pt-32 pb-20 md:pt-44 md:pb-28 grain">
-        <div className="container mx-auto px-4 grid md:grid-cols-[1fr_auto] gap-12 items-center">
-          <div className="animate-fade-in">
-            <div className="inline-flex items-center gap-2 border border-border rounded-full px-3 py-1 text-xs text-muted-foreground mb-6">
+        <div className="container mx-auto px-4 flex items-center gap-6">
+          <div className="animate-fade-in flex-1 min-w-0">
+            <div className="inline-flex items-center gap-2 border border-border rounded-full px-3 py-1 text-xs text-muted-foreground mb-8">
               <span className="w-2 h-2 rounded-full bg-primary animate-glow-pulse" />
               ex. hh.ru · ANCOR · автор блога
             </div>
-            <p className="text-primary text-sm mb-3">{'> whoami'}</p>
-            <h1 className="font-display font-bold text-5xl sm:text-6xl lg:text-7xl leading-[0.95] mb-4">
+            <p className="text-primary text-base mb-4">{'> whoami'}</p>
+            <h1 className="font-display font-bold text-6xl sm:text-7xl lg:text-8xl xl:text-9xl leading-[0.9] mb-6">
               Карьерный<br />
               <span className="neon-text-gradient text-glow">Хакер</span>
             </h1>
-            <h2 className="text-xl sm:text-2xl text-foreground/90 mb-6">
+            <h2 className="text-2xl sm:text-3xl text-foreground/90 mb-8">
               Алина Большева<span className="text-primary animate-blink">_</span>
             </h2>
-            <p className="text-muted-foreground max-w-md mb-8 leading-relaxed">
-              Привела к офферу <span className="text-foreground">400+</span> специалистов и руководителей — от Junior до CEO — со средним ростом дохода <span className="text-foreground">35%</span>. Мои клиенты уже работают в ТОП-компаниях.
+            <p className="text-foreground/70 text-lg max-w-xl mb-10 leading-relaxed">
+              Привела к офферу <span className="text-foreground font-bold">400+</span> специалистов и руководителей — от Junior до CEO — со средним ростом дохода <span className="text-foreground font-bold">35%</span>. Мои клиенты уже работают в ТОП-компаниях.
             </p>
-            <div className="flex flex-wrap gap-3">
-              <Button onClick={() => scrollTo('contact')} className="neon-gradient text-background font-bold box-glow hover:opacity-90">
-                <Icon name="Zap" size={16} className="mr-1" /> Оставить заявку
+            <div className="flex flex-wrap gap-4">
+              <Button onClick={() => scrollTo('contact')} size="lg" className="neon-gradient text-background font-bold box-glow hover:opacity-90 text-base px-8">
+                <Icon name="Zap" size={18} className="mr-2" /> Оставить заявку
               </Button>
-              <Button onClick={() => scrollTo('services')} variant="outline" className="border-border hover:box-glow-blue">
+              <Button onClick={() => scrollTo('services')} size="lg" variant="outline" className="border-border hover:box-glow-blue text-base px-8">
                 Услуги и цены
               </Button>
             </div>
           </div>
 
-          <div className="relative animate-fade-in hidden md:block" style={{ animationDelay: '0.2s', width: '280px' }}>
+          <div className="relative animate-fade-in hidden md:block shrink-0 ml-8" style={{ animationDelay: '0.2s', width: '300px' }}>
             <div className="absolute -inset-4 neon-gradient opacity-20 blur-3xl rounded-full" />
             <div className="relative rounded-lg overflow-hidden border border-border box-glow animate-float">
-              <img src={HERO_IMG} alt="Алина Большева" className="w-full object-cover" style={{ height: '380px', objectPosition: 'top center' }} />
+              <img src={HERO_IMG} alt="Алина Большева" className="w-full object-cover" style={{ height: '420px', objectPosition: 'top center' }} />
 
               <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="h-1/3 w-full bg-gradient-to-b from-primary/30 to-transparent animate-scan" />
