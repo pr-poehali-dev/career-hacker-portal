@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
 
-const HERO_IMG = 'https://cdn.poehali.dev/projects/4768ad25-1fa0-45b3-a8c0-1751048ec07e/bucket/2daadec0-e6e7-4d0a-946b-5d8a2ebbb871.png';
+const HERO_IMG = 'https://cdn.poehali.dev/projects/4768ad25-1fa0-45b3-a8c0-1751048ec07e/bucket/a6373e74-a322-4ea1-ad11-6bbe9a19194d.png';
 
 const NAV = [
   { id: 'hero', label: 'Главная' },
@@ -106,7 +106,7 @@ const Index = () => {
 
       {/* HERO */}
       <section id="hero" className="relative pt-32 pb-20 md:pt-44 md:pb-28 grain">
-        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+        <div className="container mx-auto px-4 grid md:grid-cols-[1fr_auto] gap-12 items-center">
           <div className="animate-fade-in">
             <div className="inline-flex items-center gap-2 border border-border rounded-full px-3 py-1 text-xs text-muted-foreground mb-6">
               <span className="w-2 h-2 rounded-full bg-primary animate-glow-pulse" />
@@ -133,10 +133,10 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="relative animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <div className="relative animate-fade-in hidden md:block" style={{ animationDelay: '0.2s', width: '280px' }}>
             <div className="absolute -inset-4 neon-gradient opacity-20 blur-3xl rounded-full" />
             <div className="relative rounded-lg overflow-hidden border border-border box-glow animate-float">
-              <img src={HERO_IMG} alt="Алина Большева" className="w-full h-full object-cover" />
+              <img src={HERO_IMG} alt="Алина Большева" className="w-full object-cover" style={{ height: '380px', objectPosition: 'top center' }} />
 
               <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="h-1/3 w-full bg-gradient-to-b from-primary/30 to-transparent animate-scan" />
