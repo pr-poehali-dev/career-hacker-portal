@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
 
-const HERO_IMG = 'https://cdn.poehali.dev/projects/4768ad25-1fa0-45b3-a8c0-1751048ec07e/bucket/a6373e74-a322-4ea1-ad11-6bbe9a19194d.png';
+const HERO_IMG = 'https://cdn.poehali.dev/projects/4768ad25-1fa0-45b3-a8c0-1751048ec07e/bucket/e85a9ee3-1730-4553-8a4a-1e08fc6db0af.jpg';
 
 const NAV = [
   { id: 'hero', label: 'Главная' },
