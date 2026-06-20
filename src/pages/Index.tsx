@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
 
-const HERO_IMG = 'https://cdn.poehali.dev/projects/4768ad25-1fa0-45b3-a8c0-1751048ec07e/files/1c4fa31d-8a33-4bbd-a0e6-799943c197b5.jpg';
+const HERO_IMG = 'https://cdn.poehali.dev/projects/4768ad25-1fa0-45b3-a8c0-1751048ec07e/bucket/ffe026f7-7ff8-4636-a6f4-e580c2a5e71f.png';
 
 const NAV = [
   { id: 'hero', label: 'Главная' },
@@ -137,6 +137,8 @@ const Index = () => {
             <div className="absolute -inset-4 neon-gradient opacity-20 blur-3xl rounded-full" />
             <div className="relative rounded-lg overflow-hidden border border-border box-glow animate-float">
               <img src={HERO_IMG} alt="Алина Большева" className="w-full h-full object-cover" />
+              <div className="absolute inset-0 pointer-events-none mix-blend-color" style={{ background: 'linear-gradient(135deg, hsl(265 90% 45% / 0.55), hsl(222 90% 50% / 0.45))' }} />
+              <div className="absolute inset-0 pointer-events-none" style={{ background: 'linear-gradient(160deg, hsl(265 90% 30% / 0.35), transparent 55%, hsl(222 90% 35% / 0.4))' }} />
               <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="h-1/3 w-full bg-gradient-to-b from-primary/30 to-transparent animate-scan" />
               </div>
