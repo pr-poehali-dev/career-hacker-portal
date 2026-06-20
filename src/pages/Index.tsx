@@ -10,6 +10,7 @@ const HERO_IMG = 'https://cdn.poehali.dev/projects/4768ad25-1fa0-45b3-a8c0-17510
 const NAV = [
   { id: 'hero', label: 'Главная' },
   { id: 'about', label: 'Обо_мне' },
+  { id: 'expertise', label: 'Экспертиза_и_опыт' },
   { id: 'services', label: 'Услуги' },
   { id: 'reviews', label: 'Отзывы' },
   { id: 'contact', label: 'Контакты' },
@@ -171,34 +172,42 @@ const Index = () => {
 
       {/* ABOUT */}
       <section id="about" className="py-20 border-t border-border">
-        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12">
-          <div>
-            <p className="text-primary text-base mb-3">{'> экспертиза и опыт'}</p>
-            <h2 className="font-display font-bold text-5xl mb-5">
-              Надёжная поддержка <span className="neon-text-gradient">на всех этапах</span>
-            </h2>
-            <p className="text-foreground/75 text-lg mb-7 leading-relaxed">
-              От резюме до оффера, во время адаптации и при увольнении.
+        <div className="container mx-auto px-4">
+          <p className="text-primary text-base mb-3">{'> экспертиза и опыт'}</p>
+          <h2 className="font-display font-bold text-5xl mb-5">
+            Надёжная поддержка <span className="neon-text-gradient">на всех этапах</span>
+          </h2>
+          <p className="text-foreground/75 text-lg mb-7 leading-relaxed">
+            От резюме до оффера, во время адаптации и при увольнении.
+          </p>
+          <div className="border-l-2 border-primary pl-4 box-glow rounded-r-lg py-3 bg-card/40 mb-4">
+            <p className="text-lg text-foreground/80">
+              <span className="text-primary">8+ лет</span> опыта в HR и HR-Tech, <span className="text-primary">5+ лет</span> в карьерном консультировании.
             </p>
-            <div className="border-l-2 border-primary pl-4 box-glow rounded-r-lg py-3 bg-card/40">
-              <p className="text-lg text-foreground/80">
-                <span className="text-primary">8+ лет</span> опыта в HR и HR-Tech, <span className="text-primary">5+ лет</span> в карьерном консультировании.
-              </p>
-            </div>
-            <a
-              href="https://habr.com/ru/articles/1005150/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 flex gap-3 items-center border border-primary/40 rounded-lg p-5 bg-card/40 hover:box-glow hover:border-primary transition-all group"
-            >
-              <Icon name="ExternalLink" size={20} className="text-primary shrink-0" />
-              <p className="text-lg text-foreground/90 leading-relaxed">
-                Веду блог, который читают в HR-отделах.{' '}
-                <span className="text-primary font-semibold group-hover:text-glow transition-all">Читать меня на Хабре →</span>
-              </p>
-            </a>
           </div>
-          <div className="space-y-3">
+          <a
+            href="https://habr.com/ru/articles/1005150/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex gap-3 items-center border border-primary/40 rounded-lg p-5 bg-card/40 hover:box-glow hover:border-primary transition-all group"
+          >
+            <Icon name="ExternalLink" size={20} className="text-primary shrink-0" />
+            <p className="text-lg text-foreground/90 leading-relaxed">
+              Веду блог, который читают в HR-отделах.{' '}
+              <span className="text-primary font-semibold group-hover:text-glow transition-all">Читать меня на Хабре →</span>
+            </p>
+          </a>
+        </div>
+      </section>
+
+      {/* EXPERTISE */}
+      <section id="expertise" className="py-20 border-t border-border">
+        <div className="container mx-auto px-4">
+          <p className="text-primary text-base mb-3">{'> экспертиза и опыт'}</p>
+          <h2 className="font-display font-bold text-4xl mb-10">
+            Экспертиза <span className="neon-text-gradient">и опыт</span>
+          </h2>
+          <div className="grid sm:grid-cols-2 gap-4">
             {ABOUT_POINTS.map((p, i) => (
               <div key={i} className="flex gap-3 items-start border border-border rounded-lg p-5 bg-card/40 hover:border-primary/50 transition-colors">
                 <Icon name="ChevronRight" size={20} className="text-primary shrink-0 mt-0.5" />
