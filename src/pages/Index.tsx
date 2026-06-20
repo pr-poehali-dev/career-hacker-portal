@@ -105,21 +105,21 @@ const Index = () => {
 
       {/* HERO */}
       <section id="hero" className="relative pt-32 pb-20 md:pt-44 md:pb-28 grain">
-        <div className="container mx-auto px-4 flex items-center justify-center gap-8">
-          <div className="animate-fade-in" style={{ maxWidth: '620px' }}>
+        <div className="w-full px-6 lg:px-16 flex items-center justify-between gap-12">
+          <div className="animate-fade-in flex-1 min-w-0">
             <div className="inline-flex items-center gap-2 border border-border rounded-full px-3 py-1 text-xs text-muted-foreground mb-8">
               <span className="w-2 h-2 rounded-full bg-primary animate-glow-pulse" />
               ex. hh.ru · ANCOR · автор блога
             </div>
             <p className="text-primary text-base mb-4">{'> обо мне'}</p>
-            <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl leading-[0.95] mb-4">
+            <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-7xl leading-[0.95] mb-4">
               Карьерный<br />
               <span className="neon-text-gradient text-glow">Хакер</span>
             </h1>
             <h2 className="text-xl sm:text-2xl text-foreground/90 mb-6">
               Алина Большева<span className="text-primary animate-blink">_</span>
             </h2>
-            <p className="text-foreground/80 text-xl sm:text-2xl max-w-xl mb-10 leading-relaxed font-medium">
+            <p className="text-foreground/80 text-xl sm:text-2xl max-w-2xl mb-10 leading-relaxed font-medium">
               Привела к офферу <span className="text-primary font-bold">400+</span> специалистов и руководителей  (от Junior до CEO) 
               со средним ростом дохода <span className="text-primary font-bold">35%</span>. Мои клиенты уже работают в ТОП-компаниях.
             </p>
@@ -133,10 +133,10 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="relative animate-fade-in hidden md:block shrink-0" style={{ animationDelay: '0.2s', width: '300px' }}>
+          <div className="relative animate-fade-in hidden md:block shrink-0" style={{ animationDelay: '0.2s', width: '420px' }}>
             <div className="absolute -inset-4 neon-gradient opacity-20 blur-3xl rounded-full" />
             <div className="relative rounded-lg overflow-hidden border border-border box-glow animate-float">
-              <img src={HERO_IMG} alt="Алина Большева" className="w-full object-cover" style={{ height: '420px', objectPosition: 'top center' }} />
+              <img src={HERO_IMG} alt="Алина Большева" className="w-full object-cover" style={{ height: '540px', objectPosition: 'top center' }} />
 
               <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="h-1/3 w-full bg-gradient-to-b from-primary/30 to-transparent animate-scan" />
