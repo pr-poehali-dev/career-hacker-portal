@@ -133,7 +133,7 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="relative animate-fade-in hidden md:block shrink-0" style={{ animationDelay: '0.2s', width: '420px' }}>
+          <div className="relative animate-fade-in hidden md:block shrink-0" style={{ animationDelay: '0.2s', width: '420px', marginLeft: '-2rem' }}>
             <div className="absolute -inset-4 neon-gradient opacity-20 blur-3xl rounded-full" />
             <div className="relative rounded-lg overflow-hidden border border-border box-glow animate-float">
               <img src={HERO_IMG} alt="Алина Большева" className="w-full object-cover" style={{ height: '540px', objectPosition: 'top center' }} />
@@ -159,8 +159,8 @@ const Index = () => {
             ))}
           </div>
           <div className="mt-10">
-            <p className="text-xs text-muted-foreground mb-3">{'// мои кандидаты уже работают в'}</p>
-            <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-foreground/70">
+            <p className="text-base text-muted-foreground mb-3">{'// мои кандидаты уже работают в'}</p>
+            <div className="flex flex-wrap gap-x-8 gap-y-3 text-base text-foreground/70">
               {COMPANIES.map((c) => (
                 <span key={c} className="hover:text-glow-blue hover:text-foreground transition-colors">{c}</span>
               ))}
@@ -181,7 +181,7 @@ const Index = () => {
               От резюме до оффера, во время адаптации и при увольнении.
             </p>
             <div className="border-l-2 border-primary pl-4 box-glow rounded-r-lg py-3 bg-card/40">
-              <p className="text-base text-foreground/80">
+              <p className="text-lg text-foreground/80">
                 <span className="text-primary">8+ лет</span> опыта в HR и HR-Tech, <span className="text-primary">5+ лет</span> в карьерном консультировании.
               </p>
             </div>
@@ -192,7 +192,7 @@ const Index = () => {
               className="mt-4 flex gap-3 items-center border border-primary/40 rounded-lg p-5 bg-card/40 hover:box-glow hover:border-primary transition-all group"
             >
               <Icon name="ExternalLink" size={20} className="text-primary shrink-0" />
-              <p className="text-base text-foreground/90 leading-relaxed">
+              <p className="text-lg text-foreground/90 leading-relaxed">
                 Веду блог, который читают в HR-отделах.{' '}
                 <span className="text-primary font-semibold group-hover:text-glow transition-all">Читать меня на Хабре →</span>
               </p>
