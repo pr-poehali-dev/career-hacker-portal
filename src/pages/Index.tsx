@@ -188,15 +188,15 @@ const Index = () => {
           </div>
           <div className="space-y-3">
             {ABOUT_POINTS.map((p, i) => (
-              <div key={i} className="flex gap-3 items-start border border-border rounded-lg p-4 bg-card/40 hover:border-primary/50 transition-colors">
-                <Icon name="ChevronRight" size={18} className="text-primary shrink-0 mt-0.5" />
-                <p className="text-sm text-foreground/85">{p}</p>
+              <div key={i} className="flex gap-3 items-start border border-border rounded-lg p-5 bg-card/40 hover:border-primary/50 transition-colors">
+                <Icon name="ChevronRight" size={20} className="text-primary shrink-0 mt-0.5" />
+                <p className="text-base text-foreground/90 leading-relaxed">{p}</p>
               </div>
             ))}
-            <div className="border border-border rounded-lg p-4 bg-card/40 flex gap-3 items-start">
-              <Icon name="Newspaper" size={18} className="text-secondary shrink-0 mt-0.5" />
-              <p className="text-sm text-foreground/85">
-                <span className="text-foreground">ИИ решает вашу судьбу:</span> как баг в ATS оставляет людей без работы. HR-Tech в России 2026.
+            <div className="border border-border rounded-lg p-5 bg-card/40 flex gap-3 items-start">
+              <Icon name="Newspaper" size={20} className="text-secondary shrink-0 mt-0.5" />
+              <p className="text-base text-foreground/90 leading-relaxed">
+                <span className="text-foreground font-semibold">ИИ решает вашу судьбу:</span> как баг в ATS оставляет людей без работы. HR-Tech в России 2026.
               </p>
             </div>
           </div>
@@ -214,8 +214,8 @@ const Index = () => {
                 <div className="neon-gradient w-11 h-11 grid place-items-center rounded-md mb-4 box-glow">
                   <Icon name={s.icon} size={20} className="text-background" />
                 </div>
-                <h3 className="font-bold mb-2 group-hover:text-glow transition-all">{s.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+                <h3 className="font-bold text-lg mb-2 group-hover:text-glow transition-all">{s.title}</h3>
+                <p className="text-base text-muted-foreground leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
