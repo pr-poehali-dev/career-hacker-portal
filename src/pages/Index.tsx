@@ -106,7 +106,7 @@ const Index = () => {
 
       {/* HERO */}
       <section id="hero" className="relative pt-32 pb-20 md:pt-44 md:pb-28 grain">
-        <div className="container mx-auto px-4 flex items-center gap-6">
+        <div className="container mx-auto px-4 flex items-center gap-2">
           <div className="animate-fade-in flex-1 min-w-0">
             <div className="inline-flex items-center gap-2 border border-border rounded-full px-3 py-1 text-xs text-muted-foreground mb-8">
               <span className="w-2 h-2 rounded-full bg-primary animate-glow-pulse" />
