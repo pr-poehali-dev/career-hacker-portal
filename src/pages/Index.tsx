@@ -193,12 +193,18 @@ const Index = () => {
                 <p className="text-base text-foreground/90 leading-relaxed">{p}</p>
               </div>
             ))}
-            <div className="border border-border rounded-lg p-5 bg-card/40 flex gap-3 items-start">
-              <Icon name="Newspaper" size={20} className="text-secondary shrink-0 mt-0.5" />
+            <a
+              href="https://habr.com/ru/articles/1005150/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex gap-3 items-center border border-primary/40 rounded-lg p-5 bg-card/40 hover:box-glow hover:border-primary transition-all group"
+            >
+              <Icon name="ExternalLink" size={20} className="text-primary shrink-0" />
               <p className="text-base text-foreground/90 leading-relaxed">
-                <span className="text-foreground font-semibold">ИИ решает вашу судьбу:</span> как баг в ATS оставляет людей без работы. HR-Tech в России 2026.
+                Веду блог, который читают в HR-отделах.{' '}
+                <span className="text-primary font-semibold group-hover:text-glow transition-all">Читать меня на Хабре →</span>
               </p>
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -235,10 +241,10 @@ const Index = () => {
                     <Icon key={i} name="Star" size={14} className="text-primary fill-current" />
                   ))}
                 </div>
-                <p className="text-sm text-foreground/85 leading-relaxed flex-1">{r.text}</p>
+                <p className="text-base text-foreground/85 leading-relaxed flex-1">{r.text}</p>
                 <div className="mt-5 pt-4 border-t border-border">
-                  <p className="font-bold text-sm">{r.name}</p>
-                  <p className="text-xs text-muted-foreground">{r.role}</p>
+                  <p className="font-bold text-base">{r.name}</p>
+                  <p className="text-sm text-muted-foreground">{r.role}</p>
                 </div>
               </div>
             ))}
