@@ -113,15 +113,15 @@ const Index = () => {
               ex. hh.ru · ANCOR · автор блога
             </div>
             <p className="text-primary text-base mb-4">{'> whoami'}</p>
-            <h1 className="font-display font-bold text-6xl sm:text-7xl lg:text-8xl xl:text-9xl leading-[0.9] mb-6">
+            <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl leading-[0.95] mb-4">
               Карьерный<br />
               <span className="neon-text-gradient text-glow">Хакер</span>
             </h1>
-            <h2 className="text-2xl sm:text-3xl text-foreground/90 mb-8">
+            <h2 className="text-xl sm:text-2xl text-foreground/90 mb-6">
               Алина Большева<span className="text-primary animate-blink">_</span>
             </h2>
-            <p className="text-foreground/70 text-lg max-w-xl mb-10 leading-relaxed">
-              Привела к офферу <span className="text-foreground font-bold">400+</span> специалистов и руководителей — от Junior до CEO — со средним ростом дохода <span className="text-foreground font-bold">35%</span>. Мои клиенты уже работают в ТОП-компаниях.
+            <p className="text-foreground/80 text-xl sm:text-2xl max-w-xl mb-10 leading-relaxed font-medium">
+              Привела к офферу <span className="text-primary font-bold">400+</span> специалистов и руководителей — от Junior до CEO — со средним ростом дохода <span className="text-primary font-bold">35%</span>. Мои клиенты уже работают в ТОП-компаниях.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button onClick={() => scrollTo('contact')} size="lg" className="neon-gradient text-background font-bold box-glow hover:opacity-90 text-base px-8">
@@ -133,7 +133,7 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="relative animate-fade-in hidden md:block shrink-0 ml-8" style={{ animationDelay: '0.2s', width: '300px' }}>
+          <div className="relative animate-fade-in hidden md:block shrink-0" style={{ animationDelay: '0.2s', width: '300px' }}>
             <div className="absolute -inset-4 neon-gradient opacity-20 blur-3xl rounded-full" />
             <div className="relative rounded-lg overflow-hidden border border-border box-glow animate-float">
               <img src={HERO_IMG} alt="Алина Большева" className="w-full object-cover" style={{ height: '420px', objectPosition: 'top center' }} />
