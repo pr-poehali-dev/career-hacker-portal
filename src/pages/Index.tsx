@@ -106,7 +106,7 @@ const Index = () => {
 
       {/* HERO */}
       <section id="hero" className="relative pt-32 pb-20 md:pt-44 md:pb-28 grain">
-        <div className="container mx-auto px-4 flex items-center gap-2">
+        <div className="container mx-auto px-4 flex items-center gap-10">
           <div className="animate-fade-in flex-1 min-w-0">
             <div className="inline-flex items-center gap-2 border border-border rounded-full px-3 py-1 text-xs text-muted-foreground mb-8">
               <span className="w-2 h-2 rounded-full bg-primary animate-glow-pulse" />
@@ -173,15 +173,15 @@ const Index = () => {
       <section id="about" className="py-20 border-t border-border">
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12">
           <div>
-            <p className="text-primary text-sm mb-2">{'> cat about.md'}</p>
-            <h2 className="font-display font-bold text-4xl mb-4">
+            <p className="text-primary text-base mb-3">{'> cat about.md'}</p>
+            <h2 className="font-display font-bold text-5xl mb-5">
               Надёжная поддержка <span className="neon-text-gradient">на всех этапах</span>
             </h2>
-            <p className="text-muted-foreground mb-6 leading-relaxed">
+            <p className="text-foreground/75 text-lg mb-7 leading-relaxed">
               От резюме до оффера, во время адаптации и при увольнении. Карьерный консультант, который помогает найти работу, составляет грамотное резюме, готовит к собеседованиям и помогает получать офферы.
             </p>
             <div className="border-l-2 border-primary pl-4 box-glow rounded-r-lg py-3 bg-card/40">
-              <p className="text-sm text-foreground/80">
+              <p className="text-base text-foreground/80">
                 <span className="text-primary">8+ лет</span> опыта в HR и HR-Tech, <span className="text-primary">5+ лет</span> в карьерном консультировании.
               </p>
             </div>
