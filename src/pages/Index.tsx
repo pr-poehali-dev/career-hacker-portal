@@ -15,7 +15,7 @@ const NAV = [
   { id: 'contact', label: 'Контакты' },
 ];
 
-const COMPANIES = ['hh.ru', 'ANCOR', 'Talent Tech', 'Mail.Ru', 'S8 Capital', 'GSK', 'Danone', 'ДОМ.РФ'];
+const COMPANIES = ['MOEX', 'Т-Банк', 'RWB', 'VK', 'Газпром', 'Русал', 'Правительство Москвы', 'ESTEE LAUDER', 'Danone', 'Pepsico'];
 
 const STATS = [
   { value: '400+', label: 'офферов от Junior до CEO' },
@@ -32,9 +32,9 @@ const ABOUT_POINTS = [
 ];
 
 const SERVICES = [
-  { icon: 'FileText', title: 'Сильное резюме и сопроводительное письмо', desc: 'Резюме, которое проходит ATS и цепляет рекрутера с первого взгляда.' },
+  { icon: 'FileText', title: 'Сильное резюме и сопроводительное письмо', desc: 'Резюме, которое проходит ATS и цепляет рекрутера и нанимающего с первого взгляда.' },
   { icon: 'MessagesSquare', title: 'Репетиция собеседования', desc: 'Отработка ответов, поведения и сложных вопросов под конкретную вакансию.' },
-  { icon: 'Rocket', title: 'Сопровождение: хакнем наём за 1 месяц', desc: 'Полный путь от стратегии, CV до первых собеседований.' },
+  { icon: 'Rocket', title: 'Сопровождение: Хакни наём за 1 месяц', desc: 'Полный путь от стратегии, CV до первых собеседований.' },
   { icon: 'Search', title: 'Аудит резюме и откликов', desc: 'Разбор, почему не зовут на интервью, и точечные правки.' },
   { icon: 'Network', title: 'Нетворкинг', desc: 'Стратегия выхода на нужных людей и скрытый рынок вакансий.' },
   { icon: 'Handshake', title: 'Переговоры при увольнении', desc: 'Подготовка к разговору, чтобы выйти с лучшими условиями.' },
@@ -112,7 +112,7 @@ const Index = () => {
               <span className="w-2 h-2 rounded-full bg-primary animate-glow-pulse" />
               ex. hh.ru · ANCOR · автор блога
             </div>
-            <p className="text-primary text-base mb-4">{'> whoami'}</p>
+            <p className="text-primary text-base mb-4">{'> обо мне'}</p>
             <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl leading-[0.95] mb-4">
               Карьерный<br />
               <span className="neon-text-gradient text-glow">Хакер</span>
@@ -121,7 +121,8 @@ const Index = () => {
               Алина Большева<span className="text-primary animate-blink">_</span>
             </h2>
             <p className="text-foreground/80 text-xl sm:text-2xl max-w-xl mb-10 leading-relaxed font-medium">
-              Привела к офферу <span className="text-primary font-bold">400+</span> специалистов и руководителей — от Junior до CEO — со средним ростом дохода <span className="text-primary font-bold">35%</span>. Мои клиенты уже работают в ТОП-компаниях.
+              Привела к офферу <span className="text-primary font-bold">400+</span> специалистов и руководителей  (от Junior до CEO) 
+              со средним ростом дохода <span className="text-primary font-bold">35%</span>. Мои клиенты уже работают в ТОП-компаниях.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button onClick={() => scrollTo('contact')} size="lg" className="neon-gradient text-background font-bold box-glow hover:opacity-90 text-base px-8">
@@ -159,7 +160,7 @@ const Index = () => {
             ))}
           </div>
           <div className="mt-10">
-            <p className="text-xs text-muted-foreground mb-3">{'// trusted_stack'}</p>
+            <p className="text-xs text-muted-foreground mb-3">{'// мои кандидаты уже работают в'}</p>
             <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-foreground/70">
               {COMPANIES.map((c) => (
                 <span key={c} className="hover:text-glow-blue hover:text-foreground transition-colors">{c}</span>
@@ -173,12 +174,12 @@ const Index = () => {
       <section id="about" className="py-20 border-t border-border">
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12">
           <div>
-            <p className="text-primary text-base mb-3">{'> cat about.md'}</p>
+            <p className="text-primary text-base mb-3">{'> экспертиза и опыт'}</p>
             <h2 className="font-display font-bold text-5xl mb-5">
               Надёжная поддержка <span className="neon-text-gradient">на всех этапах</span>
             </h2>
             <p className="text-foreground/75 text-lg mb-7 leading-relaxed">
-              От резюме до оффера, во время адаптации и при увольнении. Карьерный консультант, который помогает найти работу, составляет грамотное резюме, готовит к собеседованиям и помогает получать офферы.
+              От резюме до оффера, во время адаптации и при увольнении.
             </p>
             <div className="border-l-2 border-primary pl-4 box-glow rounded-r-lg py-3 bg-card/40">
               <p className="text-base text-foreground/80">
@@ -213,7 +214,7 @@ const Index = () => {
       <section id="services" className="py-20 border-t border-border">
         <div className="container mx-auto px-4">
           <p className="text-primary text-sm mb-2">{'> ls ./services'}</p>
-          <h2 className="font-display font-bold text-4xl mb-10">Услуги и <span className="neon-text-gradient">цены</span></h2>
+          <h2 className="font-display font-bold text-4xl mb-10">Услуги</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {SERVICES.map((s) => (
               <div key={s.title} className="group border border-border rounded-lg p-6 bg-card/40 hover:box-glow hover:-translate-y-1 transition-all">
@@ -231,7 +232,7 @@ const Index = () => {
       {/* REVIEWS */}
       <section id="reviews" className="py-20 border-t border-border">
         <div className="container mx-auto px-4">
-          <p className="text-primary text-sm mb-2">{'> git log --reviews'}</p>
+          <p className="text-primary text-sm mb-2">{'> reviews'}</p>
           <h2 className="font-display font-bold text-4xl mb-10">Отзывы <span className="neon-text-gradient">клиентов</span></h2>
           <div className="grid md:grid-cols-3 gap-4">
             {REVIEWS.map((r) => (
