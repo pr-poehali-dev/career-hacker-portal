@@ -28,7 +28,6 @@ const ABOUT_POINTS = [
   'Знаю изнутри, как компании ищут, выбирают и увольняют людей.',
   'Руководила проектами по автоматизации подбора персонала и HR-консалтингу для таких компаний как: Mail.Ru, S8 Capital, GSK, Danone, ДОМ.РФ и др. крупных компаний.',
   'Высшее образование в области управления персоналом, РАНХиГС.',
-  'Веду блог, который читают в HR-отделах.',
 ];
 
 const SERVICES = [
@@ -186,6 +185,18 @@ const Index = () => {
                 <span className="text-primary">8+ лет</span> опыта в HR и HR-Tech, <span className="text-primary">5+ лет</span> в карьерном консультировании.
               </p>
             </div>
+            <a
+              href="https://habr.com/ru/articles/1005150/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 flex gap-3 items-center border border-primary/40 rounded-lg p-5 bg-card/40 hover:box-glow hover:border-primary transition-all group"
+            >
+              <Icon name="ExternalLink" size={20} className="text-primary shrink-0" />
+              <p className="text-base text-foreground/90 leading-relaxed">
+                Веду блог, который читают в HR-отделах.{' '}
+                <span className="text-primary font-semibold group-hover:text-glow transition-all">Читать меня на Хабре →</span>
+              </p>
+            </a>
           </div>
           <div className="space-y-3">
             {ABOUT_POINTS.map((p, i) => (
@@ -194,18 +205,6 @@ const Index = () => {
                 <p className="text-base text-foreground/90 leading-relaxed">{p}</p>
               </div>
             ))}
-            <a
-              href="https://habr.com/ru/articles/1005150/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex gap-3 items-center border border-primary/40 rounded-lg p-5 bg-card/40 hover:box-glow hover:border-primary transition-all group"
-            >
-              <Icon name="ExternalLink" size={20} className="text-primary shrink-0" />
-              <p className="text-base text-foreground/90 leading-relaxed">
-                Веду блог, который читают в HR-отделах.{' '}
-                <span className="text-primary font-semibold group-hover:text-glow transition-all">Читать меня на Хабре →</span>
-              </p>
-            </a>
           </div>
         </div>
       </section>
