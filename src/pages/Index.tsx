@@ -53,13 +53,31 @@ const scrollTo = (id: string) => {
 const Index = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [form, setForm] = useState({ name: '', contact: '', message: '' });
+  const [sending, setSending] = useState(false);
 
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success('Заявка принята! Алина свяжется с вами.', {
-      description: '> processing... request queued',
-    });
-    setForm({ name: '', contact: '', message: '' });
+    setSending(true);
+    try {
+      const res = await fetch('https://functions.poehali.dev/6ee750c3-d9ad-4470-b702-6ecfb4928a28', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json();
+      if (data.ok) {
+        toast.success('Заявка принята! Алина свяжется с вами.', {
+          description: '> processing... request queued',
+        });
+        setForm({ name: '', contact: '', message: '' });
+      } else {
+        toast.error('Ошибка отправки. Попробуйте ещё раз.');
+      }
+    } catch {
+      toast.error('Ошибка отправки. Попробуйте ещё раз.');
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -306,8 +324,9 @@ const Index = () => {
                 className="bg-background/60 border-border focus-visible:ring-primary resize-none"
               />
             </div>
-            <Button type="submit" className="w-full neon-gradient text-background font-bold box-glow hover:opacity-90">
-              <Icon name="Send" size={16} className="mr-2" /> Отправить заявку
+            <Button type="submit" disabled={sending} className="w-full neon-gradient text-background font-bold box-glow hover:opacity-90">
+              <Icon name={sending ? 'Loader' : 'Send'} size={16} className={`mr-2${sending ? ' animate-spin' : ''}`} />
+              {sending ? 'Отправка...' : 'Отправить заявку'}
             </Button>
           </form>
         </div>
